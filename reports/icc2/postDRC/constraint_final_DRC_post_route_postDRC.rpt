@@ -1,0 +1,119 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+        -min_capacitance
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:24:29 2024
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_transition                                                              
+                             Required        Actual                            
+Net                      Transition     Transition        Slack  Violation			DRC %
+  ---------------------------------------------------------------------------
+U9/ropt_net_21174         0.06697         0.057           0.00997      (MET)        14.89%
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: default Corner: default
+   Scenario: default
+   max_capacitance                                                             
+                             Required        Actual                            
+Net                      Capacitance    Capacitance       Slack  Violation			DRC %
+  ---------------------------------------------------------------------------
+U6/n3185                  8.0             8.88811         -0.88811     (VIOLATED)   11.10%
+PIN : U6/U3280/S          8.0             8.88811         -0.88811     (VIOLATED)   11.10%
+
+U1/n5298                  8.0             8.51932         -0.51932     (VIOLATED)    6.49%
+PIN : U1/U4737/CO         8.0             8.51932         -0.51932     (VIOLATED)    6.49%
+
+HFSNET_495                16.0            16.10089        -0.10089     (VIOLATED)    0.63%
+     PIN : HFSINV_2909_2647/Y
+                          16.0            16.10089        -0.10089     (VIOLATED)    0.63%
+
+U6/HFSNET_302             32.0            32.10033        -0.10033     (VIOLATED)    0.31%
+     PIN : U6/HFSBUF_429_1576/Y
+                          32.0            32.10033        -0.10033     (VIOLATED)    0.31%
+
+HFSNET_284                32.0            32.09507        -0.09507     (VIOLATED)    0.30%
+     PIN : HFSBUF_443_2178/Y
+                          32.0            32.09507        -0.09507     (VIOLATED)    0.30%
+
+U9/n5178                  8.0             8.08982         -0.08982     (VIOLATED)    1.12%
+     PIN : U9/ctmTdsLR_1_13945/Y
+                          8.0             8.08982         -0.08982     (VIOLATED)    1.12%
+
+U6/HFSNET_141             32.0            32.08612        -0.08612     (VIOLATED)    0.27%
+     PIN : U6/HFSBUF_534_808/Y
+                          32.0            32.08612        -0.08612     (VIOLATED)    0.27%
+
+U9/HFSNET_480             32.0            32.07737        -0.07736     (VIOLATED)    0.24%
+     PIN : U9/HFSBUF_386_2699/Y
+                          32.0            32.07737        -0.07736     (VIOLATED)    0.24%
+
+U0/n5962                  8.0             8.07574         -0.07574     (VIOLATED)    0.95%
+     PIN : U0/ctmTdsLR_1_23198/Y
+                          8.0             8.07574         -0.07574     (VIOLATED)    0.95%
+
+U0/HFSNET_11              16.0            16.06078        -0.06078     (VIOLATED)    0.38%
+     PIN : U0/ctmTdsLR_1_22206/Y
+                          16.0            16.06078        -0.06078     (VIOLATED)    0.38%
+
+gre_a_INV_162_63          8.0             8.0559          -0.0559      (VIOLATED)    0.70%
+     PIN : gre_a_INV_162_inst_44154/Y
+                          8.0             8.0559          -0.0559      (VIOLATED)    0.70%
+
+U0/n8401                  8.0             8.04889         -0.04889     (VIOLATED)    0.61%
+     PIN : U0/ctmTdsLR_1_24852/Y
+                          8.0             8.04889         -0.04889     (VIOLATED)    0.61%
+
+in1[46]                   32.0            32.04715        -0.04714     (VIOLATED)    0.15%
+PORT: in1[46]             32.0            32.04715        -0.04714     (VIOLATED)    0.15%
+
+ZBUF_17_19                64.0            64.04041        -0.0404      (VIOLATED)    0.06%
+     PIN : ZBUF_17_inst_3275/Y
+                          64.0            64.04041        -0.0404      (VIOLATED)    0.06%
+
+U6/prodab[60]             8.0             8.0343          -0.0343      (VIOLATED)    0.43%
+     PIN : U6/ctmTdsLR_1_22500/Y
+                          8.0             8.0343          -0.0343      (VIOLATED)    0.43%
+
+U1/n8432                  16.0            16.03279        -0.03279     (VIOLATED)    0.20%
+     PIN : U1/ctmTdsLR_1_23811/Y
+                          16.0            16.03279        -0.03279     (VIOLATED)    0.20%
+
+U1/n8125                  16.0            16.02759        -0.02759     (VIOLATED)    0.17%
+     PIN : U1/ctmTdsLR_1_23802/Y
+                          16.0            16.02759        -0.02759     (VIOLATED)    0.17%
+
+U9/n1412                  8.0             8.01493         -0.01493     (VIOLATED)    0.19%
+PIN : U9/U797/Y           8.0             8.01493         -0.01493     (VIOLATED)    0.19%
+
+inD[49]                   8.0             8.00487         -0.00487     (VIOLATED)    0.06%
+PIN : inD_reg_49_/Q       8.0             8.00487         -0.00487     (VIOLATED)    0.06%
+
+U0/n8159                  16.0            16.004          -0.004       (VIOLATED)    0.03%
+     PIN : U0/ctmTdsLR_1_23457/Y
+                          16.0            16.004          -0.004       (VIOLATED)    0.03%
+
+U6/n6790                  16.0            16.00026        -0.00026     (VIOLATED)    0.00%
+     PIN : U6/ctmTdsLR_1_22900/Y
+                          16.0            16.00026        -0.00026     (VIOLATED)    0.00%
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 21
+
+   Mode: default Corner: default
+   Scenario: default
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+   Total number of violation(s): 21
+1

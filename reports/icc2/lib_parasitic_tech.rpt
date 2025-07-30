@@ -1,0 +1,32 @@
+****************************************
+Report : library
+Library: MYLIB
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 11:59:52 2024
+****************************************
+
+Full name: /nfs/png/disks/MDC_Elite/2024/teohchee/try4/icc2/MYLIB:MYLIB
+File name: /nfs/png/disks/MDC_Elite/2024/teohchee/try4/icc2/MYLIB
+Design count: 1
+No timing data.
+
+
+Parasitic tech data:
+----------------------------------------
+ Parasitic tech name:            maxTLU
+ Parasitic itf technology name:  saed32nm_1p9m_Cmax
+ Parasitic tech type:            TLUPLUS
+ Parasitic source file name:     saed32nm_1p9m_Cmax.tluplus
+ Parasitic canonical file name:  /nfs/png/disks/MDC_Elite/2024/teohchee/try4/saed32nm/lib/tech/star_rc/saed32nm_1p9m_Cmax.tluplus
+
+----------------------------------------
+ Parasitic tech name:            minTLU
+ Parasitic itf technology name:  saed32nm_1p9m_Cmin
+ Parasitic tech type:            TLUPLUS
+ Parasitic source file name:     saed32nm_1p9m_Cmin.tluplus
+ Parasitic canonical file name:  /nfs/png/disks/MDC_Elite/2024/teohchee/try4/saed32nm/lib/tech/star_rc/saed32nm_1p9m_Cmin.tluplus
+
+
+
+
+1

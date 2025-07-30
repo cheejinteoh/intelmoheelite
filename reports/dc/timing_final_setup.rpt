@@ -1,0 +1,114 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'MYTOP' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:19 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32lvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U5_tmp_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U6/p1_reg_127_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MYTOP              140000                saed32lvt_ss0p95v125c
+  MULT_1             35000                 saed32lvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                 0.00000    0.00000
+  clock network delay (ideal)           0.10000    0.10000
+  U5_tmp_reg_0_/CLK (DFFARX2_LVT)       0.00000 #  0.10000 r
+  U5_tmp_reg_0_/Q (DFFARX2_LVT)         0.19179    0.29179 r
+  U6/b[0] (MULT_1)                      0.00000    0.29179 r
+  U6/U303/Y (INVX2_LVT)                 0.05527    0.34706 f
+  U6/U203/Y (INVX0_LVT)                 0.09970    0.44677 r
+  U6/U364/Y (NAND2X0_LVT)               0.05459    0.50136 f
+  U6/U414/Y (INVX0_LVT)                 0.03178    0.53314 r
+  U6/U416/Y (AOI21X1_LVT)               0.06786    0.60100 f
+  U6/U526/Y (OAI21X1_LVT)               0.08173    0.68272 r
+  U6/U794/Y (AOI21X1_LVT)               0.06595    0.74867 f
+  U6/U142/Y (INVX0_LVT)                 0.05462    0.80330 r
+  U6/U1158/Y (AOI21X1_LVT)              0.07634    0.87963 f
+  U6/U1182/Y (OAI21X1_LVT)              0.08195    0.96158 r
+  U6/U1188/Y (XOR2X1_LVT)               0.11652    1.07811 f
+  U6/U260/Y (INVX0_LVT)                 0.02983    1.10794 r
+  U6/U261/Y (INVX0_LVT)                 0.04915    1.15709 f
+  U6/U5208/Y (OAI21X1_LVT)              0.09607    1.25316 r
+  U6/U5209/Y (XOR2X1_LVT)               0.08324    1.33640 f
+  U6/U5303/S (FADDX1_LVT)               0.11096    1.44736 r
+  U6/U5301/S (FADDX1_LVT)               0.10673    1.55409 f
+  U6/U5299/S (FADDX1_LVT)               0.10750    1.66160 r
+  U6/U5371/CO (FADDX1_LVT)              0.06770    1.72930 r
+  U6/U5394/S (FADDX1_LVT)               0.10390    1.83320 f
+  U6/U5382/S (FADDX1_LVT)               0.10853    1.94173 r
+  U6/U5372/Y (NOR2X0_LVT)               0.05729    1.99902 f
+  U6/U5379/Y (OAI21X1_LVT)              0.08269    2.08171 r
+  U6/U5534/Y (AOI21X1_LVT)              0.06540    2.14712 f
+  U6/U5824/Y (OAI21X1_LVT)              0.08149    2.22861 r
+  U6/U6333/Y (AOI21X1_LVT)              0.06540    2.29400 f
+  U6/U7545/Y (OAI21X1_LVT)              0.07748    2.37148 r
+  U6/U7546/Y (AO21X1_LVT)               0.03848    2.40996 r
+  U6/U7582/CO (FADDX1_LVT)              0.06685    2.47682 r
+  U6/U7581/CO (FADDX1_LVT)              0.06834    2.54515 r
+  U6/U7580/CO (FADDX1_LVT)              0.06834    2.61349 r
+  U6/U7579/CO (FADDX1_LVT)              0.06834    2.68183 r
+  U6/U7578/CO (FADDX1_LVT)              0.06834    2.75016 r
+  U6/U7577/CO (FADDX1_LVT)              0.06834    2.81850 r
+  U6/U7576/CO (FADDX1_LVT)              0.06834    2.88684 r
+  U6/U7575/CO (FADDX1_LVT)              0.06834    2.95517 r
+  U6/U7574/CO (FADDX1_LVT)              0.06834    3.02351 r
+  U6/U7573/CO (FADDX1_LVT)              0.06834    3.09185 r
+  U6/U7572/CO (FADDX1_LVT)              0.06834    3.16018 r
+  U6/U7571/CO (FADDX1_LVT)              0.06834    3.22852 r
+  U6/U7570/CO (FADDX1_LVT)              0.06834    3.29686 r
+  U6/U7569/CO (FADDX1_LVT)              0.06834    3.36519 r
+  U6/U7568/CO (FADDX1_LVT)              0.06834    3.43353 r
+  U6/U7567/CO (FADDX1_LVT)              0.06834    3.50187 r
+  U6/U7566/CO (FADDX1_LVT)              0.06834    3.57020 r
+  U6/U7565/CO (FADDX1_LVT)              0.06834    3.63854 r
+  U6/U7564/CO (FADDX1_LVT)              0.06834    3.70688 r
+  U6/U7563/CO (FADDX1_LVT)              0.06834    3.77522 r
+  U6/U7562/CO (FADDX1_LVT)              0.06834    3.84355 r
+  U6/U7561/CO (FADDX1_LVT)              0.06834    3.91189 r
+  U6/U7560/CO (FADDX1_LVT)              0.06834    3.98023 r
+  U6/U7559/CO (FADDX1_LVT)              0.06834    4.04856 r
+  U6/U7558/CO (FADDX1_LVT)              0.06834    4.11690 r
+  U6/U7557/CO (FADDX1_LVT)              0.06834    4.18524 r
+  U6/U7556/CO (FADDX1_LVT)              0.06834    4.25357 r
+  U6/U7555/CO (FADDX1_LVT)              0.06834    4.32191 r
+  U6/U7554/CO (FADDX1_LVT)              0.06834    4.39025 r
+  U6/U7553/CO (FADDX1_LVT)              0.06832    4.45856 r
+  U6/U7552/CO (FADDX1_LVT)              0.06480    4.52336 r
+  U6/U7550/Y (XOR2X1_LVT)               0.07735    4.60071 f
+  U6/p1_reg_127_/D (DFFARX1_LVT)        0.00000    4.60071 f
+  data arrival time                                4.60071
+
+  clock clk (rise edge)                 5.00000    5.00000
+  clock network delay (ideal)           0.10000    5.10000
+  clock uncertainty                    -0.10000    5.00000
+  U6/p1_reg_127_/CLK (DFFARX1_LVT)      0.00000    5.00000 r
+  library setup time                   -0.02751    4.97249
+  data required time                               4.97249
+  -----------------------------------------------------------
+  data required time                               4.97249
+  data arrival time                               -4.60071
+  -----------------------------------------------------------
+  slack (MET)                                      0.37178
+
+
+1

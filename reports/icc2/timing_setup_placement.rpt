@@ -1,0 +1,103 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:05:29 2024
+****************************************
+
+  Startpoint: U5_tmp_reg_16_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U9/p1_reg_127_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                             Incr         Path  
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (ideal)                      0.10000      0.10000
+
+  U5_tmp_reg_16_/CLK (DFFARX1_LVT)                 0.00000      0.10000 r
+  U5_tmp_reg_16_/Q (DFFARX1_LVT)                   0.13617      0.23617 f
+  HFSBUF_1134_2913/Y (NBUFFX8_LVT)                 0.06983      0.30599 f
+  U9/HFSBUF_366_2909/Y (NBUFFX8_LVT)               0.08192      0.38791 f
+  U9/U801/Y (NAND2X1_LVT)                          0.10736      0.49528 r
+  U9/U893/Y (NAND2X0_LVT)                          0.04110      0.53638 f
+  U9/U965/Y (AOI21X1_LVT)                          0.09533      0.63171 r
+  U9/U1163/Y (OAI21X1_LVT)                         0.09079      0.72250 f
+  U9/U1624/Y (AOI21X1_LVT)                         0.08385      0.80635 r
+  U9/U1625/Y (OA21X2_LVT)                          0.06630      0.87265 r
+  U9/HFSBUF_621_1713/Y (NBUFFX32_LVT)              0.05394      0.92659 r
+  U9/U1632/Y (XNOR2X1_LVT)                         0.08123      1.00782 f
+  U9/HFSBUF_710_1011/Y (NBUFFX8_LVT)               0.07034      1.07816 f
+  U9/U5076/Y (OAI21X1_LVT)                         0.10548      1.18364 r
+  U9/U5077/Y (XOR2X1_LVT)                          0.10798      1.29162 f
+  U9/U5142/S (FADDX1_LVT)                          0.12243      1.41405 r
+  U9/U5116/S (FADDX1_LVT)                          0.13247      1.54651 f
+  U9/U5113/CO (FADDX1_LVT)                         0.07711      1.62363 f
+  U9/U5186/S (FADDX1_LVT)                          0.11524      1.73887 r
+  U9/U5260/CO (FADDX1_LVT)                         0.07450      1.81337 r
+  U9/U5319/S (FADDX1_LVT)                          0.11377      1.92714 f
+  U9/U5299/S (FADDX1_LVT)                          0.11913      2.04628 r
+  U9/U5263/Y (NAND2X0_LVT)                         0.05325      2.09953 f
+  U9/U5380/Y (OAI21X1_LVT)                         0.11242      2.21195 r
+  U9/U5535/Y (AOI21X1_LVT)                         0.07072      2.28267 f
+  U9/U5825/Y (OA21X2_LVT)                          0.06958      2.35225 f
+  U9/HFSINV_134_516/Y (INVX4_LVT)                  0.02953      2.38178 r
+  U9/U6334/Y (AOI21X1_LVT)                         0.08297      2.46475 f
+  U9/U7547/Y (OAI21X2_LVT)                         0.08266      2.54741 r
+  U9/U7548/Y (AO21X1_LVT)                          0.04663      2.59405 r
+  U9/U7584/CO (FADDX1_LVT)                         0.07414      2.66819 r
+  U9/U7583/CO (FADDX1_LVT)                         0.07313      2.74132 r
+  U9/U7582/CO (FADDX1_LVT)                         0.07389      2.81521 r
+  U9/U7581/CO (FADDX1_LVT)                         0.07435      2.88955 r
+  U9/U7580/CO (FADDX1_LVT)                         0.07450      2.96406 r
+  U9/U7579/CO (FADDX1_LVT)                         0.07235      3.03640 r
+  U9/U7578/CO (FADDX1_LVT)                         0.07332      3.10972 r
+  U9/U7577/CO (FADDX1_LVT)                         0.07465      3.18437 r
+  U9/U7576/CO (FADDX1_LVT)                         0.07420      3.25857 r
+  U9/U7575/CO (FADDX1_LVT)                         0.07380      3.33236 r
+  U9/U7574/CO (FADDX1_LVT)                         0.07299      3.40536 r
+  U9/U7573/CO (FADDX1_LVT)                         0.07317      3.47852 r
+  U9/U7572/CO (FADDX1_LVT)                         0.07267      3.55119 r
+  U9/U7571/CO (FADDX1_LVT)                         0.07246      3.62365 r
+  U9/U7570/CO (FADDX1_LVT)                         0.07429      3.69795 r
+  U9/U7569/CO (FADDX1_LVT)                         0.07658      3.77453 r
+  U9/U7568/CO (FADDX1_LVT)                         0.07353      3.84805 r
+  U9/U7567/CO (FADDX1_LVT)                         0.07416      3.92221 r
+  U9/U7566/CO (FADDX1_LVT)                         0.07301      3.99523 r
+  U9/U7565/CO (FADDX1_LVT)                         0.07620      4.07142 r
+  U9/U7564/CO (FADDX1_LVT)                         0.07168      4.14310 r
+  U9/U7563/CO (FADDX1_LVT)                         0.07057      4.21367 r
+  U9/U7562/CO (FADDX1_LVT)                         0.07439      4.28806 r
+  U9/U7561/CO (FADDX1_LVT)                         0.07662      4.36468 r
+  U9/U7560/CO (FADDX1_LVT)                         0.07202      4.43670 r
+  U9/U7559/CO (FADDX1_LVT)                         0.07118      4.50788 r
+  U9/U7558/CO (FADDX1_LVT)                         0.07168      4.57956 r
+  U9/U7557/CO (FADDX1_LVT)                         0.07221      4.65177 r
+  U9/U7556/CO (FADDX1_LVT)                         0.07177      4.72355 r
+  U9/U7555/CO (FADDX1_LVT)                         0.07416      4.79770 r
+  U9/U7554/CO (FADDX1_LVT)                         0.07120      4.86891 r
+  U9/U7552/Y (XOR2X2_LVT)                          0.06639      4.93530 f
+  U9/p1_reg_127_/D (DFFARX1_LVT)                   0.00000      4.93530 f
+  data arrival time                                             4.93530
+
+  clock clk (rise edge)                            5.00000      5.00000
+  clock network delay (ideal)                      0.06000      5.06000
+  U9/p1_reg_127_/CLK (DFFARX1_LVT)                 0.00000      5.06000 r
+  clock uncertainty                               -0.10000      4.96000
+  library setup time                              -0.02628      4.93372
+  data required time                                            4.93371
+  ------------------------------------------------------------------------------
+  data required time                                            4.93371
+  data arrival time                                            -4.93530
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.00159
+
+
+1

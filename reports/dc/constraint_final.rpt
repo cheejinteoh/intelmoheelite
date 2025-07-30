@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : constraint
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:20 2024
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                       0.00000   1.00000   0.00000
+    default                   0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    max_delay/setup                               0.00000
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                       0.00000         0   0.00000
+    default                   0.00000         0   0.00000
+    -----------------------------------------------------
+    critical_range                                0.00000
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)         0.00000   1.00000   0.00000
+    default                   0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    min_delay/hold                                0.00000
+    Constraint                                     Slack
+    ----------------------------------------------------
+    max_leakage_power                           -45089972224.00000
+                                                          (VIOLATED)
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    multiport_net                                 0.00000 (MET)
+    min_capacitance                               0.00000 (MET)
+    max_delay/setup                               0.00000 (MET)
+    sequential_clock_pulse_width                  0.00000 (MET)
+    critical_range                                0.00000 (MET)
+    max_transition                                0.00000 (MET)
+    max_capacitance                              56.97371 (VIOLATED)
+    max_leakage_power                            45089972224.00000
+                                                          (VIOLATED)
+    max_area                                     196207.15625
+                                                          (VIOLATED)
+
+
+1

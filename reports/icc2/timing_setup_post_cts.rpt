@@ -1,0 +1,126 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:17:10 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: U7_tmp_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U9/p1_reg_127_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                             Incr         Path  
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (propagated)                 0.07729      0.07729
+
+  U7_tmp_reg_2_/CLK (DFFARX1_LVT)                  0.00000      0.07729 r
+  U7_tmp_reg_2_/Q (DFFARX1_LVT)                    0.12869      0.20597 f
+  HFSBUF_2279_2588/Y (NBUFFX8_LVT)                 0.06590      0.27187 f
+  HFSBUF_1100_2585/Y (NBUFFX8_LVT)                 0.07730      0.34918 f
+  U9/ctmTdsLR_3_22682/Y (INVX0_LVT)                0.03029      0.37947 r
+  U9/ctmTdsLR_2_22681/Y (NAND2X0_LVT)              0.02392      0.40339 f
+  U9/ctmTdsLR_1_22680/Y (NAND2X0_LVT)              0.05919      0.46257 r
+  U9/ctmTdsLR_2_22785/Y (NAND3X0_LVT)              0.03820      0.50077 f
+  U9/ctmTdsLR_1_22784/Y (IBUFFX8_LVT)              0.09542      0.59620 r
+  U9/HFSBUF_397_1919/Y (NBUFFX8_LVT)               0.07326      0.66946 r
+  U9/U380/Y (AOI222X1_LVT)                         0.08032      0.74978 f
+  U9/ctmTdsLR_2_9556/Y (OA21X1_LVT)                0.04862      0.79840 f
+  U9/ctmTdsLR_3_23076/Y (NAND2X0_LVT)              0.03546      0.83385 r
+  U9/ctmTdsLR_1_23074/Y (OA21X1_LVT)               0.05424      0.88810 r
+  U9/ctmTdsLR_1_10137/Y (AND3X1_LVT)               0.06300      0.95110 r
+  U9/ctmTdsLR_2_10390/Y (NAND2X0_LVT)              0.02296      0.97406 f
+  U9/ctmTdsLR_2_23644/Y (NAND2X0_LVT)              0.04202      1.01608 r
+  U9/ctmTdsLR_1_23643/Y (INVX1_LVT)                0.02424      1.04033 f
+  U9/ctmTdsLR_2_24729/Y (OA21X1_LVT)               0.05030      1.09062 f
+  U9/ctmTdsLR_1_24728/Y (INVX1_LVT)                0.02565      1.11628 r
+  U9/ctmTdsLR_2_11610/Y (NAND2X0_LVT)              0.02266      1.13894 f
+  U9/ctmTdsLR_2_25370/Y (NAND2X0_LVT)              0.04034      1.17928 r
+  U9/ctmTdsLR_1_25369/Y (INVX1_LVT)                0.02356      1.20283 f
+  U9/ctmTdsLR_2_27128/Y (OA21X1_LVT)               0.06359      1.26642 f
+  U9/ctmTdsLR_1_13882/Y (OA221X1_LVT)              0.08224      1.34867 f
+  U9/ctmTdsLR_3_28979/Y (INVX1_LVT)                0.02491      1.37358 r
+  U9/ctmTdsLR_2_28978/Y (NAND3X0_LVT)              0.03328      1.40686 f
+  U9/ctmTdsLR_1_28977/Y (NAND3X0_LVT)              0.04873      1.45559 r
+  U9/ctmTdsLR_3_17362/Y (INVX1_LVT)                0.01677      1.47236 f
+  U9/ctmTdsLR_1_17360/Y (OA221X1_LVT)              0.07561      1.54797 f
+  U9/ctmTdsLR_3_34726/Y (INVX1_LVT)                0.02169      1.56965 r
+  U9/ctmTdsLR_2_34725/Y (NAND3X0_LVT)              0.03948      1.60913 f
+  U9/ctmTdsLR_1_34724/Y (NAND3X0_LVT)              0.05077      1.65991 r
+  U9/ctmTdsLR_3_19574/Y (INVX0_LVT)                0.01860      1.67850 f
+  U9/ctmTdsLR_1_19572/Y (OA221X1_LVT)              0.08194      1.76044 f
+  U9/ctmTdsLR_3_38064/Y (INVX0_LVT)                0.02989      1.79033 r
+  U9/ctmTdsLR_2_38063/Y (NAND3X0_LVT)              0.03670      1.82703 f
+  U9/ctmTdsLR_1_38062/Y (NAND2X0_LVT)              0.07051      1.89754 r
+  U9/ctmTdsLR_3_19947/Y (INVX1_LVT)                0.01530      1.91284 f
+  U9/ctmTdsLR_1_19945/Y (AO222X1_LVT)              0.10477      2.01761 f
+  U9/gre_a_INV_14_inst_43973/Y (INVX0_LVT)         0.03164      2.04926 r
+  U9/ctmTdsLR_2_38637/Y (NAND2X0_LVT)              0.02663      2.07588 f
+  U9/ctmTdsLR_1_38636/Y (NAND3X0_LVT)              0.06765      2.14354 r
+  U9/ctmTdsLR_3_20116/Y (INVX0_LVT)                0.04545      2.18899 f
+  U9/ctmTdsLR_1_20114/Y (OA221X1_LVT)              0.10986      2.29885 f
+  U9/U2732/Y (OA21X2_LVT)                          0.09159      2.39044 f
+  U9/ctmTdsLR_1_20180/Y (OA221X1_LVT)              0.09048      2.48093 f
+  U9/HFSBUF_195_508/Y (NBUFFX4_LVT)                0.08015      2.56107 f
+  U9/U5183/Y (OA21X1_LVT)                          0.09174      2.65282 f
+  U9/HFSINV_204_496/Y (INVX2_LVT)                  0.05293      2.70575 r
+  U9/U7548/Y (AO21X1_LVT)                          0.07650      2.78225 r
+  U9/U7584/CO (FADDX1_LVT)                         0.07202      2.85427 r
+  U9/U7583/CO (FADDX1_LVT)                         0.07189      2.92616 r
+  U9/U7582/CO (FADDX1_LVT)                         0.07332      2.99948 r
+  U9/U7581/CO (FADDX1_LVT)                         0.07776      3.07724 r
+  U9/U7580/CO (FADDX2_LVT)                         0.07656      3.15380 r
+  U9/U7579/CO (FADDX1_LVT)                         0.07301      3.22681 r
+  U9/U7578/CO (FADDX1_LVT)                         0.07341      3.30023 r
+  U9/U7577/CO (FADDX1_LVT)                         0.07315      3.37337 r
+  U9/U7576/CO (FADDX1_LVT)                         0.07147      3.44484 r
+  U9/U7575/CO (FADDX1_LVT)                         0.07462      3.51946 r
+  U9/U7574/CO (FADDX1_LVT)                         0.07505      3.59451 r
+  U9/U7573/CO (FADDX1_LVT)                         0.07057      3.66508 r
+  U9/U7572/CO (FADDX1_LVT)                         0.07061      3.73569 r
+  U9/U7571/CO (FADDX1_LVT)                         0.07082      3.80651 r
+  U9/U7570/CO (FADDX1_LVT)                         0.07378      3.88029 r
+  U9/U7569/CO (FADDX1_LVT)                         0.07528      3.95557 r
+  U9/U7568/CO (FADDX1_LVT)                         0.07105      4.02662 r
+  U9/U7567/CO (FADDX1_LVT)                         0.07048      4.09710 r
+  U9/U7566/CO (FADDX1_LVT)                         0.07254      4.16964 r
+  U9/U7565/CO (FADDX1_LVT)                         0.07452      4.24416 r
+  U9/U7564/CO (FADDX1_LVT)                         0.07029      4.31444 r
+  U9/U7563/CO (FADDX1_LVT)                         0.06968      4.38412 r
+  U9/U7562/CO (FADDX1_LVT)                         0.07259      4.45671 r
+  U9/U7561/CO (FADDX1_LVT)                         0.07315      4.52986 r
+  U9/U7560/CO (FADDX1_LVT)                         0.07233      4.60218 r
+  U9/U7559/CO (FADDX1_LVT)                         0.07322      4.67541 r
+  U9/U7558/CO (FADDX1_LVT)                         0.07334      4.74874 r
+  U9/U7557/CO (FADDX1_LVT)                         0.07050      4.81924 r
+  U9/U7556/CO (FADDX1_LVT)                         0.07036      4.88960 r
+  U9/U7555/CO (FADDX1_LVT)                         0.07544      4.96504 r
+  U9/ctmTdsLR_9_42095/Y (AO22X1_LVT)               0.06611      5.03115 r
+  U9/ctmTdsLR_11_42097/Y (NAND2X0_LVT)             0.02354      5.05468 f
+  U9/ctmTdsLR_8_42094/Y (OA21X1_LVT)               0.04587      5.10056 f
+  U9/p1_reg_127_/D (DFFARX1_LVT)                   0.00000      5.10056 f
+  data arrival time                                             5.10056
+
+  clock clk (rise edge)                            5.00000      5.00000
+  clock network delay (propagated)                 0.12192      5.12192
+  clock reconvergence pessimism                    0.00362      5.12554
+  U9/p1_reg_127_/CLK (DFFARX1_LVT)                 0.00000      5.12554 r
+  library setup time                              -0.02598      5.09956
+  data required time                                            5.09956
+  ------------------------------------------------------------------------------
+  data required time                                            5.09956
+  data arrival time                                            -5.10056
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.00100
+
+
+1

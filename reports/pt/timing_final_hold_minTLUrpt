@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : MYTOP
+Version: V-2023.12-SP4-VAL-20240710
+Date   : Mon Sep  9 12:46:52 2024
+****************************************
+
+
+  Startpoint: U0/p2_reg_127_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U0/c_reg_127_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: cts_inv_23288681/Y
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                0.00000    0.00000
+  clock network delay (propagated)                     0.07287    0.07287
+  U0/p2_reg_127_/CLK (DFFARX1_LVT)                     0.00000    0.07287 r
+  U0/p2_reg_127_/Q (DFFARX1_LVT)                       0.12374 &  0.19661 f
+  U0/c_reg_127_/D (DFFARX1_LVT)                        0.00001 &  0.19661 f
+  data arrival time                                               0.19661
+
+  clock clk (rise edge)                                0.00000    0.00000
+  clock network delay (propagated)                     0.13423    0.13423
+  clock reconvergence pessimism                       -0.00525    0.12898
+  U0/c_reg_127_/CLK (DFFARX1_LVT)                                 0.12898 r
+  library hold time                                   -0.00807    0.12090
+  data required time                                              0.12090
+  ------------------------------------------------------------------------------
+  data required time                                              0.12090
+  data arrival time                                              -0.19661
+  ------------------------------------------------------------------------------
+  slack (MET)                                                     0.07571
+
+
+1

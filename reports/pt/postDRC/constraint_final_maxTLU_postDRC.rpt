@@ -1,0 +1,33 @@
+****************************************
+Report : constraint
+Design : MYTOP
+Version: V-2023.12-SP4-VAL-20240710
+Date   : Mon Sep  9 12:42:05 2024
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    CAP                       0.00000   5.00000   0.00000
+    clk                       0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    max_delay/setup                               0.00000
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    CAP                       0.00000   5.00000   0.00000
+    clk                       0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    min_delay/hold                                0.00000
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                               0.00000  (MET)
+    min_delay/hold                                0.00000  (MET)
+    recovery                                      0.00000  (MET)
+    sequential_clock_pulse_width                  0.00000  (MET)
+    max_capacitance                               2.40460  (VIOLATED)
+    max_transition                                0.00000  (MET)
+
+1

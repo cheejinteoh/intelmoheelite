@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:00:09 2024
+****************************************
+
+  Startpoint: U9/p2_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U9/c_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                             Incr         Path  
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (ideal)                      0.00000      0.00000
+
+  U9/p2_reg_0_/CLK (DFFARX1_LVT)                   0.00000      0.00000 r
+  U9/p2_reg_0_/Q (DFFARX1_LVT)                     0.12630      0.12630 f
+  U9/c_reg_0_/D (DFFARX1_LVT)                      0.00000      0.12630 f
+  data arrival time                                             0.12630
+
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (ideal)                      0.10000      0.10000
+  U9/c_reg_0_/CLK (DFFARX1_LVT)                    0.00000      0.10000 r
+  clock uncertainty                                0.10000      0.20000
+  library hold time                               -0.00443      0.19557
+  data required time                                            0.19557
+  ------------------------------------------------------------------------------
+  data required time                                            0.19557
+  data arrival time                                            -0.12630
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.06926
+
+
+1

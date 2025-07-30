@@ -1,0 +1,17 @@
+Warning: The congestion map is out dated. Specify -rerun_global_router option to regenerate one.
+
+****************************************
+Report : congestion
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:05:30 2024
+****************************************
+
+Layer     |    overflow     |                 # GRCs has
+Name      |  total  |  max  | overflow (%)         | max overflow
+---------------------------------------------------------------
+Both Dirs |    1400 |     5 |    1167  ( 0.74960%) |       2
+H routing |    1180 |     5 |     996  ( 1.27953%) |       1
+V routing |     220 |     5 |     171  ( 0.21968%) |       1
+
+1

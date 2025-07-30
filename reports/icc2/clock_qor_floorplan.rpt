@@ -1,0 +1,53 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'MYLIB:MYTOP/pg_design.design'. (TIM-125)
+Information: Design Average RC for design MYTOP  (NEX-011)
+Information: r = 1.796306 ohm/um, via_r = 0.512671 ohm/cut, c = 0.065670 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.785714 ohm/um, via_r = 0.625776 ohm/cut, c = 0.077067 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'MYTOP'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 40279, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+****************************************
+Report : clock qor
+        -type summary
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:00:06 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================
+==== Summary Reporting for Corner default ====
+==============================================
+
+================================================= Summary Table for Corner default =================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+clk                                     M,D      2180      1        0   0.00000   0.00000   0.10000   0.10000         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2180      1        0   0.00000   0.00000   0.10000   0.10000         0         0
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

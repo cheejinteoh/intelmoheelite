@@ -1,0 +1,78 @@
+****************************************
+Report : qor
+Design : MYTOP
+Version: V-2023.12-SP4-VAL-20240710
+Date   : Mon Sep  9 12:46:52 2024
+****************************************
+
+  Timing Path Group '**async_default**' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            5
+  Critical Path Length:                 0.67332
+  Critical Path Slack:                  4.48586
+  Total Negative Slack:                 0.00000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'CAP' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           82
+  Critical Path Length:                 4.99140
+  Critical Path Slack:                  0.10215
+  Total Negative Slack:                 0.00000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           77
+  Critical Path Length:                 5.01886
+  Critical Path Slack:                  0.08957
+  Total Negative Slack:                 0.00000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'CAP' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            4
+  Critical Path Length:                 0.33742
+  Critical Path Slack:                  0.18411
+  Total Negative Slack:                 0.00000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1
+  Critical Path Length:                 0.19661
+  Critical Path Slack:                  0.07571
+  Total Negative Slack:                 0.00000
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:            71278.35938
+  Total cell area:                 137082.18750
+  Design Area:                     208360.54688
+  ---------------------------------------------
+
+
+  Cell & Pin Count
+  ---------------------------------------------
+  Pin Count:                             185764
+  Hierarchical Cell Count:                    4
+  Hierarchical Port Count:                 1415
+  Leaf Cell Count:                        49181
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:           185764
+  max_capacitance Count:                      2
+  max_capacitance Cost:                 2.51536
+  Total DRC Cost:                       2.51536
+  ---------------------------------------------
+
+1

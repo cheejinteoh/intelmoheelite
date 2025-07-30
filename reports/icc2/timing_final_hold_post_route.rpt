@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 12:24:29 2024
+****************************************
+Information: Timer using 'AWP, CRPR'. (TIM-050)
+
+  Startpoint: U0/p2_reg_127_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U0/c_reg_127_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                             Incr         Path  
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (propagated)                 0.07788      0.07788
+
+  U0/p2_reg_127_/CLK (DFFARX1_LVT)                 0.00000      0.07788 r
+  U0/p2_reg_127_/Q (DFFARX1_LVT)                   0.12444      0.20231 f
+  U0/c_reg_127_/D (DFFARX1_LVT)                    0.00002      0.20233 f
+  data arrival time                                             0.20233
+
+  clock clk (rise edge)                            0.00000      0.00000
+  clock network delay (propagated)                 0.13668      0.13668
+  clock reconvergence pessimism                   -0.00629      0.13039
+  U0/c_reg_127_/CLK (DFFARX1_LVT)                  0.00000      0.13039 r
+  library hold time                               -0.00796      0.12243
+  data required time                                            0.12243
+  ------------------------------------------------------------------------------
+  data required time                                            0.12243
+  data arrival time                                            -0.20233
+  ------------------------------------------------------------------------------
+  slack (MET)                                                   0.07991
+
+
+1
