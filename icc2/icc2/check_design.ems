@@ -1,15 +1,0 @@
-<Database>
-Name/nfs/png/disks/MDC_Elite/2024/teohchee/try4/icc2/check_design.ems
-Creation TimeMon Sep  9 12:17:15 2024
-Modified TimeMon Sep  9 12:17:15 2024
-Design NameMYTOP
-Library NameMYLIB
-</Database>
-<RuleCount>
-DFT-0111
-</RuleCount>
-<UserDefinedRules>
-</UserDefinedRules>
-<Messages>
-DFT-011reason10
-</Messages>
