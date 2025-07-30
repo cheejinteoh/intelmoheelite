@@ -1,0 +1,1276 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version S-2021.06-SP2 for linux64 - Aug 24, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /nfs/png/home/teohchee/.synopsys_dc_gui/preferences.tcl
+####################################################################
+#        Note: Must Run this tcl at assignment/dc Directory        #
+####################################################################
+###############################################################
+#        Read, Link and Check RTL Designs from Verilog        #
+###############################################################
+read_file -f verilog [glob ../source/*.v]
+Loading db file '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/saed32nm/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db'
+Loading db file '/nfs/png/disks/MDC_Elite/cad/designcompiler/S-2021.06-SP2/libraries/syn/dw_foundation.sldb'
+Loading db file '/nfs/png/disks/MDC_Elite/cad/designcompiler/S-2021.06-SP2/libraries/syn/gtech.db'
+Loading db file '/nfs/png/disks/MDC_Elite/cad/designcompiler/S-2021.06-SP2/libraries/syn/standard.sldb'
+  Loading link library 'saed32lvt_ss0p95v125c'
+  Loading link library 'gtech'
+Loading verilog files: '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/adder.v' '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mult.v' '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/piso.v' '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/sipo.v' '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mytop.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/adder.v
+Compiling source file /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mult.v
+Compiling source file /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/piso.v
+Compiling source file /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/sipo.v
+Compiling source file /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mytop.v
+
+Inferred memory devices in process
+	in routine MULT line 15 in file
+		'/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       p1_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|        c_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|       p2_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine PISO line 22 in file
+		'/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/piso.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |  129  |  Y  | N  | Y  | N  | N  | N  | N  |
+|      dout_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SIPO line 18 in file
+		'/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/sipo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       tmp_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 12 in file
+	'/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mytop.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine MYTOP line 12 in file
+		'/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/mytop.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       inD_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       inA_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       inC_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       inB_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/ADDR.db:ADDR'
+Loaded 5 designs.
+Current design is 'ADDR'.
+ADDR MULT PISO SIPO MYTOP
+set design_name "MYTOP"
+MYTOP
+current_design $design_name
+Current design is 'MYTOP'.
+{MYTOP}
+link
+
+  Linking design 'MYTOP'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (5 designs)               /nfs/png/disks/MDC_Elite/2024/teohchee/try3/source/MYTOP.db, etc
+  saed32lvt_ss0p95v125c (library) /nfs/png/disks/MDC_Elite/2024/teohchee/try3/saed32nm/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db
+  dw_foundation.sldb (library) /nfs/png/disks/MDC_Elite/cad/designcompiler/S-2021.06-SP2/libraries/syn/dw_foundation.sldb
+
+1
+check_design
+1
+#################################################
+#       Set Significant Figures for Reports		#
+#################################################
+set_app_var report_default_significant_digits 5
+5
+printvar report_default_significant_digits
+report_default_significant_digits = "5"
+source -echo -verbose ./scripts/dc.con
+###################################
+#        Constraint for DC        #
+###################################
+reset_design 
+1
+###############################################
+#        Parameterization of Variables        #
+###############################################
+set CLOCK clk
+clk
+# set VIRTUAL_CLOCK vclk
+set PERIOD 5.0
+5.0
+set LATENCY [expr {(2.0/100.0) * $PERIOD}]
+0.1
+set TRANSITION  [expr {(2.0/100.0) * $PERIOD}]
+0.1
+set SKEW [expr {(2.0/100.0) * $PERIOD}]
+0.1
+set INPUT_DELAY 0.2
+0.2
+set OUTPUT_DELAY 0.2
+0.2
+set OPERATING ss0p95v125c
+ss0p95v125c
+set DRV_CELL NBUFFX4_LVT
+NBUFFX4_LVT
+set INPUT_PORTS [remove_from_collection [all_inputs] [get_ports $CLOCK]]
+{rst loadsin loadsout loadm sinA sinB in1[63] in1[62] in1[61] in1[60] in1[59] in1[58] in1[57] in1[56] in1[55] in1[54] in1[53] in1[52] in1[51] in1[50] in1[49] in1[48] in1[47] in1[46] in1[45] in1[44] in1[43] in1[42] in1[41] in1[40] in1[39] in1[38] in1[37] in1[36] in1[35] in1[34] in1[33] in1[32] in1[31] in1[30] in1[29] in1[28] in1[27] in1[26] in1[25] in1[24] in1[23] in1[22] in1[21] in1[20] in1[19] in1[18] in1[17] in1[16] in1[15] in1[14] in1[13] in1[12] in1[11] in1[10] in1[9] in1[8] in1[7] in1[6] in1[5] in1[4] in1[3] in1[2] in1[1] in1[0] in2[63] in2[62] in2[61] in2[60] in2[59] in2[58] in2[57] in2[56] in2[55] in2[54] in2[53] in2[52] in2[51] in2[50] in2[49] in2[48] in2[47] in2[46] in2[45] in2[44] in2[43] in2[42] in2[41] in2[40] in2[39] in2[38] in2[37] in2[36] in2[35] in2[34] ...}
+set OUTPUT_LOAD [expr {[load_of saed32lvt_ss0p95v125c/NAND2X1_LVT/A1] * 5}] 
+2.43683
+###################################
+#        Clock Constraints        #
+###################################
+create_clock -period $PERIOD [get_ports $CLOCK] -name $CLOCK
+1
+set_clock_latency -max $LATENCY [get_clocks $CLOCK]
+1
+set_clock_transition $TRANSITION [get_clocks $CLOCK]
+1
+set_clock_uncertainty $SKEW [get_clocks $CLOCK]
+1
+################################################################
+#        Virtual Clock Creation for Combo Logic Path(s)        #
+################################################################
+# create_clock -name $VIRTUAL_CLOCK -period $PERIOD
+# 
+# set_input_delay 0 -clock $VIRTUAL_CLOCK [get_ports $INPUT_PORTS]
+# set_output_delay 0 -clock $VIRTUAL_CLOCK [all_outputs]
+# 
+# set_false_path -from [get_clocks $CLOCK] -to [get_clocks $VIRTUAL_CLOCK]
+# set_false_path -from [get_clocks $VIRTUAL_CLOCK] -to [get_clocks $CLOCK]
+#########################################
+#        Input and Output Delays        #
+#########################################
+set_input_delay -max $INPUT_DELAY -clock $CLOCK $INPUT_PORTS
+1
+set_output_delay -max $OUTPUT_DELAY -clock $CLOCK [all_outputs]
+1
+#####################
+#        PVT        #
+#####################
+set_operating_conditions -max $OPERATING
+Using operating conditions 'ss0p95v125c' found in library 'saed32lvt_ss0p95v125c'.
+1
+#############################
+#        Output Load        #
+#############################
+set_load $OUTPUT_LOAD [all_outputs]
+1
+##############################
+#        Driving Cell        #
+##############################
+set_driving_cell -lib_cell $DRV_CELL $INPUT_PORTS
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+###############################################
+#        Physical Constraints for Area        #
+###############################################
+set_max_area 0
+1
+1
+##########################################
+#       Changes to the RTL Designs       #
+##########################################
+# Insert buffers for all multiple-port nets - eliminate assign
+set_fix_multiple_port_nets -all -buffer_constants
+1
+# Delay is the most important cost
+set_cost_priority -delay
+1
+# Convert tri to wire - eliminate assign 
+set verilogout_no_tri true 
+true
+############################################################
+#       Run compile_ultra by changing the registers        #
+############################################################
+compile_ultra -retime
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.2 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.2 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+Information: Uniquified 2 instances of design 'ADDR'. (OPT-1056)
+Information: Uniquified 4 instances of design 'MULT'. (OPT-1056)
+Information: Uniquified 2 instances of design 'PISO'. (OPT-1056)
+Information: Uniquified 4 instances of design 'SIPO'. (OPT-1056)
+  Simplifying Design 'MYTOP'
+
+Loaded alib file './alib-52/saed32lvt_ss0p95v125c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy U2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy U3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy U4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy UB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy UA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy U8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy U7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy U5 before Pass 1 (OPT-776)
+Information: Ungrouping 8 of 13 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'MYTOP'
+Information: In design 'MYTOP', the register 'U8/tmp_reg[0]' is removed because it is merged to 'U5/tmp_reg[0]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[1]' is removed because it is merged to 'U5/tmp_reg[1]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[2]' is removed because it is merged to 'U5/tmp_reg[2]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[3]' is removed because it is merged to 'U5/tmp_reg[3]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[4]' is removed because it is merged to 'U5/tmp_reg[4]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[5]' is removed because it is merged to 'U5/tmp_reg[5]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[6]' is removed because it is merged to 'U5/tmp_reg[6]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[7]' is removed because it is merged to 'U5/tmp_reg[7]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[8]' is removed because it is merged to 'U5/tmp_reg[8]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[9]' is removed because it is merged to 'U5/tmp_reg[9]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[10]' is removed because it is merged to 'U5/tmp_reg[10]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[11]' is removed because it is merged to 'U5/tmp_reg[11]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[12]' is removed because it is merged to 'U5/tmp_reg[12]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[13]' is removed because it is merged to 'U5/tmp_reg[13]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[14]' is removed because it is merged to 'U5/tmp_reg[14]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[15]' is removed because it is merged to 'U5/tmp_reg[15]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[16]' is removed because it is merged to 'U5/tmp_reg[16]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[17]' is removed because it is merged to 'U5/tmp_reg[17]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[18]' is removed because it is merged to 'U5/tmp_reg[18]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[19]' is removed because it is merged to 'U5/tmp_reg[19]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[20]' is removed because it is merged to 'U5/tmp_reg[20]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[21]' is removed because it is merged to 'U5/tmp_reg[21]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[22]' is removed because it is merged to 'U5/tmp_reg[22]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[23]' is removed because it is merged to 'U5/tmp_reg[23]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[24]' is removed because it is merged to 'U5/tmp_reg[24]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[25]' is removed because it is merged to 'U5/tmp_reg[25]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[26]' is removed because it is merged to 'U5/tmp_reg[26]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[27]' is removed because it is merged to 'U5/tmp_reg[27]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[28]' is removed because it is merged to 'U5/tmp_reg[28]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[29]' is removed because it is merged to 'U5/tmp_reg[29]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[30]' is removed because it is merged to 'U5/tmp_reg[30]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[31]' is removed because it is merged to 'U5/tmp_reg[31]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[32]' is removed because it is merged to 'U5/tmp_reg[32]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[33]' is removed because it is merged to 'U5/tmp_reg[33]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[34]' is removed because it is merged to 'U5/tmp_reg[34]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[35]' is removed because it is merged to 'U5/tmp_reg[35]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[36]' is removed because it is merged to 'U5/tmp_reg[36]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[37]' is removed because it is merged to 'U5/tmp_reg[37]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[38]' is removed because it is merged to 'U5/tmp_reg[38]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[39]' is removed because it is merged to 'U5/tmp_reg[39]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[40]' is removed because it is merged to 'U5/tmp_reg[40]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[41]' is removed because it is merged to 'U5/tmp_reg[41]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[42]' is removed because it is merged to 'U5/tmp_reg[42]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[43]' is removed because it is merged to 'U5/tmp_reg[43]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[44]' is removed because it is merged to 'U5/tmp_reg[44]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[45]' is removed because it is merged to 'U5/tmp_reg[45]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[46]' is removed because it is merged to 'U5/tmp_reg[46]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[47]' is removed because it is merged to 'U5/tmp_reg[47]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[48]' is removed because it is merged to 'U5/tmp_reg[48]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[49]' is removed because it is merged to 'U5/tmp_reg[49]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[50]' is removed because it is merged to 'U5/tmp_reg[50]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[51]' is removed because it is merged to 'U5/tmp_reg[51]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[52]' is removed because it is merged to 'U5/tmp_reg[52]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[53]' is removed because it is merged to 'U5/tmp_reg[53]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[54]' is removed because it is merged to 'U5/tmp_reg[54]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[55]' is removed because it is merged to 'U5/tmp_reg[55]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[56]' is removed because it is merged to 'U5/tmp_reg[56]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[57]' is removed because it is merged to 'U5/tmp_reg[57]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[58]' is removed because it is merged to 'U5/tmp_reg[58]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[59]' is removed because it is merged to 'U5/tmp_reg[59]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[60]' is removed because it is merged to 'U5/tmp_reg[60]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[61]' is removed because it is merged to 'U5/tmp_reg[61]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[62]' is removed because it is merged to 'U5/tmp_reg[62]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U8/tmp_reg[63]' is removed because it is merged to 'U5/tmp_reg[63]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[0]' is removed because it is merged to 'U7/tmp_reg[0]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[1]' is removed because it is merged to 'U7/tmp_reg[1]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[2]' is removed because it is merged to 'U7/tmp_reg[2]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[3]' is removed because it is merged to 'U7/tmp_reg[3]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[4]' is removed because it is merged to 'U7/tmp_reg[4]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[5]' is removed because it is merged to 'U7/tmp_reg[5]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[6]' is removed because it is merged to 'U7/tmp_reg[6]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[7]' is removed because it is merged to 'U7/tmp_reg[7]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[8]' is removed because it is merged to 'U7/tmp_reg[8]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[9]' is removed because it is merged to 'U7/tmp_reg[9]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[10]' is removed because it is merged to 'U7/tmp_reg[10]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[11]' is removed because it is merged to 'U7/tmp_reg[11]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[12]' is removed because it is merged to 'U7/tmp_reg[12]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[13]' is removed because it is merged to 'U7/tmp_reg[13]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[14]' is removed because it is merged to 'U7/tmp_reg[14]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[15]' is removed because it is merged to 'U7/tmp_reg[15]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[16]' is removed because it is merged to 'U7/tmp_reg[16]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[17]' is removed because it is merged to 'U7/tmp_reg[17]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[18]' is removed because it is merged to 'U7/tmp_reg[18]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[19]' is removed because it is merged to 'U7/tmp_reg[19]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[20]' is removed because it is merged to 'U7/tmp_reg[20]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[21]' is removed because it is merged to 'U7/tmp_reg[21]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[22]' is removed because it is merged to 'U7/tmp_reg[22]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[23]' is removed because it is merged to 'U7/tmp_reg[23]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[24]' is removed because it is merged to 'U7/tmp_reg[24]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[25]' is removed because it is merged to 'U7/tmp_reg[25]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[26]' is removed because it is merged to 'U7/tmp_reg[26]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[27]' is removed because it is merged to 'U7/tmp_reg[27]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[28]' is removed because it is merged to 'U7/tmp_reg[28]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[29]' is removed because it is merged to 'U7/tmp_reg[29]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[30]' is removed because it is merged to 'U7/tmp_reg[30]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[31]' is removed because it is merged to 'U7/tmp_reg[31]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[32]' is removed because it is merged to 'U7/tmp_reg[32]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[33]' is removed because it is merged to 'U7/tmp_reg[33]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[34]' is removed because it is merged to 'U7/tmp_reg[34]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[35]' is removed because it is merged to 'U7/tmp_reg[35]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[36]' is removed because it is merged to 'U7/tmp_reg[36]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[37]' is removed because it is merged to 'U7/tmp_reg[37]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[38]' is removed because it is merged to 'U7/tmp_reg[38]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[39]' is removed because it is merged to 'U7/tmp_reg[39]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[40]' is removed because it is merged to 'U7/tmp_reg[40]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[41]' is removed because it is merged to 'U7/tmp_reg[41]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[42]' is removed because it is merged to 'U7/tmp_reg[42]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[43]' is removed because it is merged to 'U7/tmp_reg[43]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[44]' is removed because it is merged to 'U7/tmp_reg[44]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[45]' is removed because it is merged to 'U7/tmp_reg[45]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[46]' is removed because it is merged to 'U7/tmp_reg[46]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[47]' is removed because it is merged to 'U7/tmp_reg[47]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[48]' is removed because it is merged to 'U7/tmp_reg[48]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[49]' is removed because it is merged to 'U7/tmp_reg[49]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[50]' is removed because it is merged to 'U7/tmp_reg[50]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[51]' is removed because it is merged to 'U7/tmp_reg[51]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[52]' is removed because it is merged to 'U7/tmp_reg[52]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[53]' is removed because it is merged to 'U7/tmp_reg[53]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[54]' is removed because it is merged to 'U7/tmp_reg[54]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[55]' is removed because it is merged to 'U7/tmp_reg[55]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[56]' is removed because it is merged to 'U7/tmp_reg[56]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[57]' is removed because it is merged to 'U7/tmp_reg[57]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[58]' is removed because it is merged to 'U7/tmp_reg[58]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[59]' is removed because it is merged to 'U7/tmp_reg[59]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[60]' is removed because it is merged to 'U7/tmp_reg[60]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[61]' is removed because it is merged to 'U7/tmp_reg[61]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[62]' is removed because it is merged to 'U7/tmp_reg[62]'. (OPT-1215)
+Information: In design 'MYTOP', the register 'U4/tmp_reg[63]' is removed because it is merged to 'U7/tmp_reg[63]'. (OPT-1215)
+ Implement Synthetic for 'MYTOP'.
+  Processing 'MULT_0'
+ Implement Synthetic for 'MULT_0'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_LVT' in the library 'saed32lvt_ss0p95v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: The wire load model of the parent cell MYTOP is different from that of the child cell U0 in the design MULT_3. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell MYTOP is different from that of the child cell U9 in the design MULT_0. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell MYTOP is different from that of the child cell U6 in the design MULT_1. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell MYTOP is different from that of the child cell U1 in the design MULT_2. The child cell will not be ungrouped. (OPT-779)
+Information: 3 other designs were not ungrouped because of differing wire load models. (OPT-779)
+  Mapping Optimization (Phase 1)
+Information: Added key list 'DesignWare' to design 'MULT_3'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'MULT_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'MULT_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'MULT_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'MYTOP'. (DDB-72)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:44  190099.2      0.00       0.0    9199.1                           113599012864.0000
+    0:00:46  190081.9      0.00       0.0    9199.1                           113594286080.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:48  190173.4      0.00       0.0    9199.1                           113662607360.0000
+    0:00:50  190173.4      0.00       0.0    9199.1                           113662607360.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:19  129620.6      0.00       0.0   12990.0                           44044984320.0000
+    0:01:19  129620.6      0.00       0.0   12990.0                           44044984320.0000
+    0:01:19  129620.6      0.00       0.0   12990.0                           44044984320.0000
+    0:01:19  129620.6      0.00       0.0   12990.0                           44044984320.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+    0:01:30  129395.9      0.00       0.0   12985.6                           43954823168.0000
+    0:01:32  129395.9      0.00       0.0   12985.6                           43954823168.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:50  128970.2      0.00       0.0   11772.4                           43338416128.0000
+    0:01:55  128437.0      0.00       0.0   10796.5                           42988740608.0000
+    0:01:55  128437.0      0.00       0.0   10796.5                           42988740608.0000
+    0:01:55  128437.0      0.00       0.0   10796.5                           42988740608.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:01  128674.4      0.00       0.0   10732.2                           42582994944.0000
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:02:05  129276.7      0.00       0.0    1947.8 U1/net110953              42846003200.0000
+    0:02:06  129291.2      0.00       0.0    1702.7                           42848866304.0000
+    0:02:06  129291.2      0.00       0.0    1702.7                           42848866304.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_lvt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:06  129291.2      0.00       0.0    1702.7                           42848866304.0000
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+    0:02:19  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:19  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:19  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:21  128424.6      0.00       0.0     239.7                           42225082368.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:24  128424.6      0.00       0.0     239.7                           42225082368.0000
+    0:02:29  127584.9      0.00       0.0     230.5                           42365636608.0000
+    0:02:29  127584.9      0.00       0.0     230.5                           42365636608.0000
+    0:02:29  127584.9      0.00       0.0     230.5                           42365636608.0000
+    0:02:31  127598.8      0.00       0.0     230.5                           42345783296.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:37  127616.6      0.00       0.0     230.5                           42324578304.0000
+    0:02:48  127606.7      0.00       0.0     251.7                           42323656704.0000
+Loading db file '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/saed32nm/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'MYTOP' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'U1/clk': 2180 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# Eliminate special characters in the netlist and constraint file
+change_name -rules verilog -hierarchy  
+1
+###################################################
+#       Save the Reports With Cost Priority       #
+###################################################
+redirect -tee -file ../reports/dc/timing_final_setup.rpt {report_timing -delay_type max}
+Information: Updating design information... (UID-85)
+Warning: Design 'MYTOP' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:19 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32lvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U5_tmp_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U6/p1_reg_127_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MYTOP              140000                saed32lvt_ss0p95v125c
+  MULT_1             35000                 saed32lvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                 0.00000    0.00000
+  clock network delay (ideal)           0.10000    0.10000
+  U5_tmp_reg_0_/CLK (DFFARX2_LVT)       0.00000 #  0.10000 r
+  U5_tmp_reg_0_/Q (DFFARX2_LVT)         0.19179    0.29179 r
+  U6/b[0] (MULT_1)                      0.00000    0.29179 r
+  U6/U303/Y (INVX2_LVT)                 0.05527    0.34706 f
+  U6/U203/Y (INVX0_LVT)                 0.09970    0.44677 r
+  U6/U364/Y (NAND2X0_LVT)               0.05459    0.50136 f
+  U6/U414/Y (INVX0_LVT)                 0.03178    0.53314 r
+  U6/U416/Y (AOI21X1_LVT)               0.06786    0.60100 f
+  U6/U526/Y (OAI21X1_LVT)               0.08173    0.68272 r
+  U6/U794/Y (AOI21X1_LVT)               0.06595    0.74867 f
+  U6/U142/Y (INVX0_LVT)                 0.05462    0.80330 r
+  U6/U1158/Y (AOI21X1_LVT)              0.07634    0.87963 f
+  U6/U1182/Y (OAI21X1_LVT)              0.08195    0.96158 r
+  U6/U1188/Y (XOR2X1_LVT)               0.11652    1.07811 f
+  U6/U260/Y (INVX0_LVT)                 0.02983    1.10794 r
+  U6/U261/Y (INVX0_LVT)                 0.04915    1.15709 f
+  U6/U5208/Y (OAI21X1_LVT)              0.09607    1.25316 r
+  U6/U5209/Y (XOR2X1_LVT)               0.08324    1.33640 f
+  U6/U5303/S (FADDX1_LVT)               0.11096    1.44736 r
+  U6/U5301/S (FADDX1_LVT)               0.10673    1.55409 f
+  U6/U5299/S (FADDX1_LVT)               0.10750    1.66160 r
+  U6/U5371/CO (FADDX1_LVT)              0.06770    1.72930 r
+  U6/U5394/S (FADDX1_LVT)               0.10390    1.83320 f
+  U6/U5382/S (FADDX1_LVT)               0.10853    1.94173 r
+  U6/U5372/Y (NOR2X0_LVT)               0.05729    1.99902 f
+  U6/U5379/Y (OAI21X1_LVT)              0.08269    2.08171 r
+  U6/U5534/Y (AOI21X1_LVT)              0.06540    2.14712 f
+  U6/U5824/Y (OAI21X1_LVT)              0.08149    2.22861 r
+  U6/U6333/Y (AOI21X1_LVT)              0.06540    2.29400 f
+  U6/U7545/Y (OAI21X1_LVT)              0.07748    2.37148 r
+  U6/U7546/Y (AO21X1_LVT)               0.03848    2.40996 r
+  U6/U7582/CO (FADDX1_LVT)              0.06685    2.47682 r
+  U6/U7581/CO (FADDX1_LVT)              0.06834    2.54515 r
+  U6/U7580/CO (FADDX1_LVT)              0.06834    2.61349 r
+  U6/U7579/CO (FADDX1_LVT)              0.06834    2.68183 r
+  U6/U7578/CO (FADDX1_LVT)              0.06834    2.75016 r
+  U6/U7577/CO (FADDX1_LVT)              0.06834    2.81850 r
+  U6/U7576/CO (FADDX1_LVT)              0.06834    2.88684 r
+  U6/U7575/CO (FADDX1_LVT)              0.06834    2.95517 r
+  U6/U7574/CO (FADDX1_LVT)              0.06834    3.02351 r
+  U6/U7573/CO (FADDX1_LVT)              0.06834    3.09185 r
+  U6/U7572/CO (FADDX1_LVT)              0.06834    3.16018 r
+  U6/U7571/CO (FADDX1_LVT)              0.06834    3.22852 r
+  U6/U7570/CO (FADDX1_LVT)              0.06834    3.29686 r
+  U6/U7569/CO (FADDX1_LVT)              0.06834    3.36519 r
+  U6/U7568/CO (FADDX1_LVT)              0.06834    3.43353 r
+  U6/U7567/CO (FADDX1_LVT)              0.06834    3.50187 r
+  U6/U7566/CO (FADDX1_LVT)              0.06834    3.57020 r
+  U6/U7565/CO (FADDX1_LVT)              0.06834    3.63854 r
+  U6/U7564/CO (FADDX1_LVT)              0.06834    3.70688 r
+  U6/U7563/CO (FADDX1_LVT)              0.06834    3.77522 r
+  U6/U7562/CO (FADDX1_LVT)              0.06834    3.84355 r
+  U6/U7561/CO (FADDX1_LVT)              0.06834    3.91189 r
+  U6/U7560/CO (FADDX1_LVT)              0.06834    3.98023 r
+  U6/U7559/CO (FADDX1_LVT)              0.06834    4.04856 r
+  U6/U7558/CO (FADDX1_LVT)              0.06834    4.11690 r
+  U6/U7557/CO (FADDX1_LVT)              0.06834    4.18524 r
+  U6/U7556/CO (FADDX1_LVT)              0.06834    4.25357 r
+  U6/U7555/CO (FADDX1_LVT)              0.06834    4.32191 r
+  U6/U7554/CO (FADDX1_LVT)              0.06834    4.39025 r
+  U6/U7553/CO (FADDX1_LVT)              0.06832    4.45856 r
+  U6/U7552/CO (FADDX1_LVT)              0.06480    4.52336 r
+  U6/U7550/Y (XOR2X1_LVT)               0.07735    4.60071 f
+  U6/p1_reg_127_/D (DFFARX1_LVT)        0.00000    4.60071 f
+  data arrival time                                4.60071
+
+  clock clk (rise edge)                 5.00000    5.00000
+  clock network delay (ideal)           0.10000    5.10000
+  clock uncertainty                    -0.10000    5.00000
+  U6/p1_reg_127_/CLK (DFFARX1_LVT)      0.00000    5.00000 r
+  library setup time                   -0.02751    4.97249
+  data required time                               4.97249
+  -----------------------------------------------------------
+  data required time                               4.97249
+  data arrival time                               -4.60071
+  -----------------------------------------------------------
+  slack (MET)                                      0.37178
+
+
+1
+redirect -tee -file ../reports/dc/timing_final_hold.rpt {report_timing -delay_type min}
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:20 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32lvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U0/p2_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U0/c_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MYTOP              140000                saed32lvt_ss0p95v125c
+  MULT_3             35000                 saed32lvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                 0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  U0/p2_reg_0_/CLK (DFFARX1_LVT)        0.00000 #  0.00000 r
+  U0/p2_reg_0_/Q (DFFARX1_LVT)          0.12633    0.12633 f
+  U0/c_reg_0_/D (DFFARX1_LVT)           0.00000    0.12633 f
+  data arrival time                                0.12633
+
+  clock clk (rise edge)                 0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  clock uncertainty                     0.10000    0.10000
+  U0/c_reg_0_/CLK (DFFARX1_LVT)         0.00000    0.10000 r
+  library hold time                    -0.00445    0.09555
+  data required time                               0.09555
+  -----------------------------------------------------------
+  data required time                               0.09555
+  data arrival time                               -0.12633
+  -----------------------------------------------------------
+  slack (MET)                                      0.03078
+
+
+1
+redirect -tee -file ../reports/dc/constraint_final.rpt {report_constraints}
+ 
+****************************************
+Report : constraint
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:20 2024
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                       0.00000   1.00000   0.00000
+    default                   0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    max_delay/setup                               0.00000
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                       0.00000         0   0.00000
+    default                   0.00000         0   0.00000
+    -----------------------------------------------------
+    critical_range                                0.00000
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)         0.00000   1.00000   0.00000
+    default                   0.00000   1.00000   0.00000
+    -----------------------------------------------------
+    min_delay/hold                                0.00000
+    Constraint                                     Slack
+    ----------------------------------------------------
+    max_leakage_power                           -45089972224.00000
+                                                          (VIOLATED)
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    multiport_net                                 0.00000 (MET)
+    min_capacitance                               0.00000 (MET)
+    max_delay/setup                               0.00000 (MET)
+    sequential_clock_pulse_width                  0.00000 (MET)
+    critical_range                                0.00000 (MET)
+    max_transition                                0.00000 (MET)
+    max_capacitance                              56.97371 (VIOLATED)
+    max_leakage_power                            45089972224.00000
+                                                          (VIOLATED)
+    max_area                                     196207.15625
+                                                          (VIOLATED)
+
+
+1
+redirect -tee -file ../reports/dc/constraint_final_DRC.rpt {report_constraints -all_violators -min_capacitance -max_capacitance -max_transition}
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -min_capacitance
+        -max_capacitance
+        -max_transition
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:20 2024
+****************************************
+
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   U1/n4229                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4370                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4471                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4683                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4732                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4845                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U1/n4994                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8355                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8360                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8377                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8393                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8431                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8435                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8455                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8468                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8499                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8504                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8511                  8.00000       10.24954       -2.24954  (VIOLATED)
+   U6/n8571                  8.00000       10.24954       -2.24954  (VIOLATED)
+   n1822                     8.00000       10.16600       -2.16600  (VIOLATED)
+   n2151                     8.00000       10.16600       -2.16600  (VIOLATED)
+   n633                     16.00000       17.82162       -1.82162  (VIOLATED)
+   n2028                    16.00000       17.82162       -1.82162  (VIOLATED)
+   rst                      32.00000       33.81995       -1.81995  (VIOLATED)
+   loadsout                 32.00000       33.75728       -1.75728  (VIOLATED)
+   n393                     16.00000       17.29900       -1.29900  (VIOLATED)
+   n2154                    32.00000       33.03847       -1.03847  (VIOLATED)
+   n397                     64.00000       64.18458       -0.18458  (VIOLATED)
+   U6/n5175                  8.00000        8.15786       -0.15786  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      29              -56.97371 
+
+1
+redirect -tee -file ../reports/dc/qor_final.rpt {report_qor}
+ 
+****************************************
+Report : qor
+Design : MYTOP
+Version: S-2021.06-SP2
+Date   : Mon Sep  9 09:04:20 2024
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:           60.00000
+  Critical Path Length:       4.50071
+  Critical Path Slack:        0.37178
+  Critical Path Clk Period:   5.00000
+  Total Negative Slack:       0.00000
+  No. of Violating Paths:     0.00000
+  Worst Hold Violation:       0.00000
+  Total Hold Violation:       0.00000
+  No. of Hold Violations:     0.00000
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          4
+  Hierarchical Port Count:       1032
+  Leaf Cell Count:              34566
+  Buf/Inv Cell Count:            2820
+  Buf Cell Count:                 608
+  Inv Cell Count:                2212
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     32386
+  Sequential Cell Count:         2180
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    112093.25909
+  Noncombinational Area:  15513.45832
+  Buf/Inv Area:            4415.75204
+  Total Buffer Area:       1493.60431
+  Total Inverter Area:     2922.14773
+  Macro/Black Box Area:       0.00000
+  Net Area:               68600.44626
+  -----------------------------------
+  Cell Area:             127606.71741
+  Design Area:           196207.16367
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         40279
+  Nets With Violations:            29
+  Max Trans Violations:             0
+  Max Cap Violations:              29
+  -----------------------------------
+
+
+  Hostname: pglkvm09
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                 6.42014
+  Logic Optimization:              26.43357
+  Mapping Optimization:            73.40353
+  -----------------------------------------
+  Overall Compile Time:            172.65718
+  Overall Compile Wall Clock Time: 174.65251
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00000  TNS: 0.00000  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00000  TNS: 0.00000  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+######################################################################
+#       Send the Synthesis Results to Output Directory for ICC2      #
+######################################################################
+write_sdc ../output/dc/${design_name}.sdc
+1
+write_file -format ddc -hier -output ../output/dc/${design_name}.ddc
+Writing ddc file '../output/dc/MYTOP.ddc'.
+1
+write_file -format verilog -hier -output ../output/dc/${design_name}.v
+Writing verilog file '/nfs/png/disks/MDC_Elite/2024/teohchee/try3/output/dc/MYTOP.v'.
+1
+#############################
+#       Exit DC Shell       #
+#############################
+exit
+Memory usage for this session 287 Mbytes.
+Memory usage for this session including child processes 287 Mbytes.
+CPU usage for this session 181 seconds ( 0.05 hours ).
+Elapsed time for this session 407 seconds ( 0.11 hours ).
+
+Thank you...
